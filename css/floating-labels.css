@@ -1,0 +1,49 @@
+      .field-container {
+        position: relative;
+        margin:0 auto;
+        width: 200px;
+        height: 60px;
+      }
+
+      .field {
+        padding: 0 10px;
+        margin: 0;
+        height: 30px;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid #C2C7D0;
+        border-radius: 5px;
+      }
+
+      .field:focus {
+        outline: 0;
+      }
+
+      .floating-label {
+        position:absolute;
+        top: 28px;
+        left: 0;
+        width: 100%;
+        padding: 4px 10px;
+        margin: 0;
+        opacity:1;
+        text-align: left;
+        pointer-events:none;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #e72;
+        color: #333;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        border: 1px solid #C2C7D0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .field:focus + .floating-label {
+        background-color: #fb9;
+      }
+
+      .field:valid + .floating-label {
+        background-color: #dea;
+      }
